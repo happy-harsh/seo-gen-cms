@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "85dc34ac-24d8-43d5-a4cc-b4105ba1244f",
+		"name": "pages",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28576808"
+	},
+	"item": [
+		{
+			"name": "generate seo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/pages/685bc122fb37be7c7b325c56/seo/generate",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"pages",
+						"685bc122fb37be7c7b325c56",
+						"seo",
+						"generate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create page",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiI2ODViYmM0M2ZiMzdiZTdjN2IzMjVjNTAiLCJlbWFpbCI6Imt1bmFsQGludGVybm92by5pbiIsImlhdCI6MTc1MDg0MjU5NSwiZXhwIjoxNzUwODQzNDk1fQ.3wJnQTP_syqUNTPfucb0czV0wMUoxsYWxcRQPVI-aXU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"title\": \"Best Places in Jaipur\",\r\n    \"content\": \"Jaipur, the Pink City, offers a blend of history and culture. Visit the Amer Fort for stunning architecture, explore the royal City Palace, and don’t miss the Hawa Mahal for its iconic façade. Enjoy shopping in Johari Bazaar and try local dishes like Dal Baati Churma.\",\r\n    \"category\": \"Travel\"\r\n  }\r\n"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/pages",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"pages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all pages",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiI2ODViYmM0M2ZiMzdiZTdjN2IzMjVjNTAiLCJlbWFpbCI6Imt1bmFsQGludGVybm92by5pbiIsImlhdCI6MTc1MDg0MjU5NSwiZXhwIjoxNzUwODQzNDk1fQ.3wJnQTP_syqUNTPfucb0czV0wMUoxsYWxcRQPVI-aXU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/pages",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"pages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bulk update",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
